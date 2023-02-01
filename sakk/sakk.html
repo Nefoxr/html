@@ -18,14 +18,16 @@
 
         td
         {
-            width: 75px;
-            height: 75px;
+            width: 100px;
+            height: 100px;
             background-color: white;
-            border: 3px solid black;
+            border: 2px solid black;
             border-collapse: collapse;
             text-align: center;
 
             text-transform: uppercase;
+
+            background-repeat: no-repeat;
         }
         table
         {
@@ -34,14 +36,31 @@
             margin: auto;
         }
 
-
-        .feherBastya
+        .feherBastya, .feherFuto, .feherLo, .feherVezer, .feherKiraly, .feherGyalog,
+        .feketeBastya, .feketeFuto, .feketeLo, .feketeVezer, .feketeKiraly, .feketeGyalog
         {
             background-image: url(./bábuk.png);
-            background-size: 300px 223px;
-            background-position: 32% 100%;
+            background-size: 300% 300%;
         }
-    </style>
+
+
+
+        .feherBastya {background-position: 30% 103%;}
+        .feherFuto {background-position:70% 103%;}
+        .feherGyalog {background-position: 30% 103%;}
+        .feherLo {background-position: -10% 103%;}
+        .feherVezer {background-position: 110% 53%;}
+        .feherKiraly {background-position: 70% 53%;}
+        .feherGyalog {background-position: 110% 103%;}
+
+        .feketeBastya {background-position: 70% -5%;}
+        .feketeFuto {background-position: 30% -5%;}
+        .feketeGyalog {background-position: 10% -5%;}
+        .feketeLo {background-position: 60% -5%;}
+        .feketeVezer {background-position: 110% 53%;}
+        .feketeKiraly {background-position: 70% 53%;}
+        .feketeGyalog {background-position: 110% 103%;}
+        </style>
 </head>
 <body>
     <!--img src="./bábuk.png">-->
@@ -55,17 +74,17 @@
         <tr>
             <td>1</td>
             <td class="fekete feherBastya"></td>
-            <td></td>
-            <td class="fekete"></td>
-            <td></td>
-            <td class="fekete"></td>
+            <td class="feherLo"></td>
+            <td class="fekete feherFuto"></td>
+            <td class="feherVezer"></td>
+            <td class="fekete feherKiraly"></td>
             <td></td>
             <td class="fekete"></td>
             <td></td>
         </tr>
         <tr>
             <td>2</td>
-            <td></td>
+            <td class="feherGyalog"></td>
             <td class="fekete"></td>
             <td></td>
             <td class="fekete"></td>
@@ -131,11 +150,11 @@
         </tr>
         <tr>
             <td>8</td>
-            <td></td>
-            <td class="fekete"></td>
-            <td></td>
-            <td class="fekete"></td>
-            <td></td>
+            <td class="feketeBastya"></td>
+            <td class="fekete feketeLo"></td>
+            <td class="feketeFuto"></td>
+            <td class="fekete feketeVezer"></td>
+            <td class="feketeKiraly"></td>
             <td class="fekete"></td>
             <td></td>
             <td class="fekete"></td>
